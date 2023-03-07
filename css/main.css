@@ -12,8 +12,16 @@
     max-width: 1200px;
     width: 100%;
 }
-.sizing {padding: 4em;}
-
+.sizing {
+    padding: 4em;
+}
+#textAlign {
+    text-align: center;
+}
+.Height800{
+    height:800px;
+}
+.borderNone {border:none;}
 /* ***REGOLE GENERICO END*** */
 /* Regole flex */
 .flexContainer{
@@ -97,7 +105,7 @@ text-align: right;
 .pink {
     width: 70%;
     height:100%;
-    flex-direction: column ;
+    flex-direction: column;
 }
 .pink h1 {
     font-size: 45px;
@@ -117,12 +125,12 @@ text-align: right;
 .marginSide {
     margin: 0 auto;
 }
-#buttBrowser,#buttMac {
+#buttBrowser,.buttMac {
     border-radius: 25px;
-    font-size: 22px;
-    padding: 13px;    
+    font-size: 16px;
+    padding: 1em;    
 }
-#buttMac {
+.buttMac {
     color:black;
     background-color: white;
     margin-right: 1.5em;
@@ -137,6 +145,9 @@ text-align: right;
     height:600px;
     background-color: white;
 }
+#cWhite {
+    color: white;
+}
 .bloccoUno {
     width: 70%;
 }
@@ -146,7 +157,6 @@ text-align: right;
 }
 .bloccoDue h1 {
     font-weight: 900;
-    margin-top: 25px;
 }
 .paragrafoUno{
     background-color: white;
@@ -159,13 +169,18 @@ text-align: right;
 .wave {
     background-image: url(/img/wave.svg);
     opacity:40%;}
-.green {
-    background-color:#228b22;
-    height: 100%;
-    width:80%;
+
+#textAlign h1 {
+    font-weight: 900;
 }
-.big {
-    min-height: 900px;
+.wid80 {
+    width: 80%;
+}
+h3 {
+    font-weight: 800;
+}
+.bglightviolet {
+    background-color:cornflowerblue;
 }
 .black {
     background-color: black;
