@@ -1,15 +1,19 @@
+/* ***REGOLE GENERICO*** */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: arial;
-  font-weight: 400;   
+  font-family: 'Open Sans', sans-serif;
+  color: white;   
 }
 .boxed {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
 }
+.sizing {padding: 4em;}
+.arrow 
+/* ***REGOLE GENERICO END*** */
 /* Regole flex */
 .flexContainer{
     display: flex;
@@ -31,7 +35,7 @@
     justify-content:space-around;
 }
 /* End  */
-.sizing {padding: 4em;}
+/* Header  */
 header{
     width: 100%;
     min-width: 1200px;
@@ -66,6 +70,7 @@ text-align: right;
     border-radius: 10px;
     padding: 7px;
     border:none;
+    color: black;
 }
 .lightblue {
     min-height: 4em;
@@ -83,10 +88,42 @@ text-align: right;
     }
 
 .pink {
-    background-color: pink;
     width: 70%;
     height:100%;
+    flex-direction: column ;
 }
+.pink h1 {
+    font-size: 45px;
+    font-weight: 900;
+    width: 80%;
+    text-align: center;
+}
+.pink p {
+    font-size: 18px;
+    text-align: center;
+}
+.dispInlBlock
+{
+    display: inline-block;
+}
+.marginSide {
+    margin: 0 auto;
+}
+#buttBrowser,#buttMac {
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 13px;    
+}
+#buttMac {
+    color:black;
+    background-color: white;
+    margin-right: 1.5em;
+}
+#buttBrowser {
+    background-color: black;
+}
+
+/* HEADER END */
 .white {
     height:600px;
     background-color: white;
