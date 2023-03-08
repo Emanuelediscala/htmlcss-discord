@@ -27,7 +27,9 @@
     max-width:600px;
     min-width:160px;
 }
-
+.width100{
+    width: 100%;
+}
 .borderNone {
     border:none;
 }
@@ -98,6 +100,15 @@ a{
     text-decoration: none;
     color: white;
 }
+.link a {
+    margin:0 auto;
+    text-align: center;
+    
+}
+.link {width:40%;}
+a:hover {
+    text-decoration: underline;
+}
 .login {
 text-align: right;
 }
@@ -109,53 +120,66 @@ text-align: right;
     padding: 7px;
     border:none;
     color: black;
+    cursor: pointer;
+}
+#buttonLogin:hover {
+    background-color: black;
+    color: white;
+    transition: 300ms;
 }
 .lightblue {
     min-height: 4em;
     padding-top: 10px;
 }
-.goldenrod {
-    max-width:1920px;
-    width:80%;
-    padding: 0.2em;
-    font-size: 20px;
-    }
+
 .blue {
     width:100%;
     height:500px;
     }
 
-.pink {
+.blockTitle {
     width: 70%;
     height:100%;
     flex-direction: column;
 }
-.pink h1 {
+.blockTitle h1 {
     font-size: 45px;
     font-weight: 900;
     width: 80%;
     text-align: center;
     color: white;
 }
-.pink p {
+.blockTitle p {
     font-size: 18px;
     text-align: center;
+    color: white;
+    line-height:30px;
 }
-#buttBrowser,.buttMac {
+#buttBrowser,.buttMac{
     border-radius: 25px;
     font-size: 16px;
-    padding: 1em;    
+    padding: 1em;
+    cursor: pointer;    
 }
 .buttMac {
     color:black;
     background-color: white;
     margin-right: 1.5em;
 }
+.buttMac:hover {
+    background-color: black;
+    color: white;
+    transition: 300ms;
+}
 #buttBrowser {
     background-color: black;
     color: white;
 }
-
+#buttBrowser:hover {
+    background-color: white;
+    color:cornflowerblue;
+    transition: 300ms;
+}
 /* HEADER END */
 .white {
     height:600px;
@@ -173,18 +197,27 @@ text-align: right;
 }
 .bloccoDue h1 {
     font-weight: 900;
+    margin: 10px 0;
 }
 .paragrafoUno{
     background-color: white;
+    text-align: center;
+
 }   
 
 .bggray {
     background-color:#d3d3d3;
 }
-
 .wave {
-    background-image: url(/img/wave.svg);
-    opacity:40%;}
+    background-image: url(../img/wave.svg);
+    height: 100px;
+    opacity:17%;}
+.waveRotate {
+    background-image: url(../img/wave.svg);
+    height: 100px;
+    opacity:17%;
+    transform:rotate(180deg);
+}
 
 #textAlign h1 {
     font-weight: 900;
@@ -194,6 +227,18 @@ text-align: right;
 }
 h3 {
     font-weight: 800;
+    margin-top: 1em;
+    padding-top: 1em;
+    width:100%;
+}
+.stars {
+    background-image: url(../img/stars.svg);
+    background-size:contain;
+    background-position:top;
+    background-repeat: no-repeat;
+
+
+    
 }
 .bglightviolet {
     background-color:cornflowerblue;
@@ -201,42 +246,31 @@ h3 {
 .black {
     background-color: black;
 }
-.lightorange {
-    background-color:#f08080;
-    height: 100%;
-    width: 30%;
-    }
-.cyan {
-    background-color:#20b2aa;
-    height:100%;
-    width: 70%;
-    justify-content: flex-start;
-    align-items: stretch;
-}
 
 .spacerTop {
     border-top: 2px solid white;
     width: 100%;
 }
 .spacerBottom {
-    border-bottom:2px solid white;
+    border-bottom: 2px solid white;
 }
 .smooth {
     height:110px;
     background-color: black;
 }
-.lightgreen {
-    height:100%;
-    background-color:#7fffd4;
-    width:100%;
-}
-#bottone {all:unset;}
-.bottonefooter {
-    border: 2px dotted black;
-}
-.logofooter, .bottonefooter {
-    background-color: #f08080;
+
+
+.logofooter {
+    background-color: black;
     padding: 2px;
+}
+#bottone {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+
 }
 .sizingFooter {
     padding-top: 3em;
